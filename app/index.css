@@ -16,5 +16,13 @@ body div {
     margin: 10px;
     font-weight: bold;
     list-style: none;
-
+}
+.popular-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.popular-item {
+    margin: 20px;
+    text-align: center;
 }
