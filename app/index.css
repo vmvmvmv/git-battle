@@ -30,6 +30,17 @@ ul li {
 }
 .avatar {
     width: 150px;
-    border-radius: 50%;
-    
+    border-radius: 50%;  
+}
+
+.nav {
+  display: flex;
+}
+
+.nav li {
+  margin-right: 15px;
+}
+
+.nav li a.active {
+  font-weight: bold;
 }
