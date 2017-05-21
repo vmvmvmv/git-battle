@@ -1,10 +1,10 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Nav from './nav'
 import Home from './home'
 import Popular from './popular'
 import Battle from './battle'
-import { Switch } from 'react-router-dom'
+import Results from './results'
 
 
 export class App extends React.Component {
@@ -15,7 +15,8 @@ export class App extends React.Component {
                     <Nav />
                     <Switch>
                         <Route exact path='/' component={Home} /> 
-                        <Route path='/battle' component={Battle} /> 
+                        <Route exact path='/battle' component={Battle} /> 
+                        <Route path='/battle/results' component={Results} /> 
                         <Route path='/popular' component={Popular} />
                         <Route render={function() {
                             return <p>not found</p>
