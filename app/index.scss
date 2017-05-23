@@ -1,16 +1,18 @@
-ul li {
-    list-style: none;
+ul {
+  li {
+      list-style: none;
+  }
 }
 
 .lang {
     display: flex;
     justify-content: center;
     padding: 0;
-}
-.lang li {
-    margin: 10px;
-    font-weight: bold;
-    list-style: none;
+    li {
+        margin: 10px;
+        font-weight: bold;
+        list-style: none;
+    }
 }
 .popular-list {
     display: flex;
@@ -37,13 +39,17 @@ ul li {
   display: flex;
 }
 
-.nav li {
-  margin-right: 15px;
+.nav {
+  li {
+     margin-right: 15px;
+
+     a.active {
+        font-weight: bold;
+      }
+  }
+ 
 }
 
-.nav li a.active {
-  font-weight: bold;
-}
 .row {
   display: flex;
   justify-content: space-around;
@@ -54,21 +60,21 @@ ul li {
   flex-direction: column;
   width: 500px;
   align-items: center;
-}
 
-.column input {
-  border-radius: 3px;
-  margin: 10px 0;
-  padding: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.43);
-  font-size: 16px;
-  width: 80%;
-}
+  input {
+    border-radius: 3px;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.43);
+    font-size: 16px;
+    width: 80%;
+  }
 
-.column label {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 200;
+  label {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+  }
 }
 
 .header {
