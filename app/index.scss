@@ -1,17 +1,49 @@
-ul {
-  li {
-      list-style: none;
-  }
+*{
+    font-family: 'Inconsolata', monospace;
+	font-weight: bold;
 }
+body {
+	background-color: #C6E0FF;
+}
+ul {
+    li {
+       list-style: none;
+    }
+}
+a {
+	text-decoration: none;
+}
+.home-container {
+	text-align: center;
 
+	h1 {
+		padding: 20px 0;
+		font-size: 24px;
+	}
+
+	.button {
+		padding: 20px 50px;
+		margin: 50px auto 0;
+		border-radius: 10px;
+		font-size: 32px;
+		color: #FFF;
+		background-color: #315659;
+		border-bottom: 5px solid #0E1819;
+		text-shadow: 0px -2px #0E1819;
+
+		&:hover {
+			background-color: #243F41;
+		}
+	}
+}
 .lang {
     display: flex;
     justify-content: center;
     padding: 0;
     li {
-        margin: 10px;
-        font-weight: bold;
-        list-style: none;
+       margin: 10px;
+       font-weight: bold;
+       list-style: none;
     }
 }
 .popular-list {
@@ -24,87 +56,100 @@ ul {
     text-align: center;
 }
 .popular-rank {
-  font-size: 20px;
-  margin: 10px;
+    font-size: 20px;
+    margin: 10px;
 }
 .space-list-item {
     margin-bottom: 7px;
 }
 .avatar {
     width: 150px;
-    border-radius: 50%;  
+    border-radius: 50%;
 }
 
 .nav {
-  display: flex;
-}
+    text-align: center;
 
-.nav {
-  li {
-     margin-right: 15px;
+    li {
+        display: inline-block;
+        margin-right: 15px;
 
-     a.active {
-        font-weight: bold;
-      }
-  }
- 
+        a {
+			color: #253031;
+			font-size: 28px;
+			padding: 10px;
+			background-color: #BCAB79;
+			border-radius: 5px;
+			width: 120px;
+			display: inline-block;
+
+			&:hover {
+				background-color: #675E42;
+			}
+        }
+
+        a.active {
+            font-weight: bold;
+        }
+    }
+
 }
 
 .row {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
 
-  input {
-    border-radius: 3px;
-    margin: 10px 0;
-    padding: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.43);
-    font-size: 16px;
-    width: 80%;
-  }
+    input {
+        border-radius: 3px;
+        margin: 10px 0;
+        padding: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.43);
+        font-size: 16px;
+        width: 80%;
+    }
 
-  label {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 200;
-  }
+    label {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 200;
+    }
 }
 
 .header {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 200;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
 }
 
 .reset {
-  border: none;
-  background: transparent;
-  color: #d0021b;
-  display: block;
-  width: 100%;
-  text-align: center;
+    border: none;
+    background: transparent;
+    color: #d0021b;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 .reset:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .button {
-  color: #e6e6e6;
-  background: #0a0a0a;
-  border: none;
-  font-size: 16px;
-  border-radius: 3px;
-  width: 200px;
-  text-align: center;
-  display: block;
-  padding: 7px 0;
-  margin: 10px auto;
+    color: #e6e6e6;
+    background: #0a0a0a;
+    border: none;
+    font-size: 16px;
+    border-radius: 3px;
+    width: 200px;
+    text-align: center;
+    display: block;
+    padding: 7px 0;
+    margin: 10px auto;
 }

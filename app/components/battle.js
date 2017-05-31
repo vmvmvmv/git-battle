@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom'
-import PlayerPreview from './PlayerPreview'
+import PlayerPreview from './playerPreview'
 
 
 class PlayerInput extends React.Component {

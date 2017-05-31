@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import queryString from 'query-string'
 import api from '../utils/api'
 import {Link} from 'react-router-dom'
-import PlayerPreview from './PlayerPreview'
+import PlayerPreview from './playerPreview'
 import Loading from './loading'
 
 function Profile (props) {
