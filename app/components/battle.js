@@ -113,7 +113,7 @@ class Battle extends React.Component {
                             username={playerOneName}
                         >
                             <button
-                                className='reset'
+                                className='reset button'
                                 onClick={this.handleReset.bind(this, 'playerOne')}>
                                 Reset
                             </button>
